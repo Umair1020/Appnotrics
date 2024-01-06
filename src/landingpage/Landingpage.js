@@ -146,7 +146,7 @@ const Landingpage = () => {
         }
 
         try {
-            const response = await fetch('http://server.appnotrics.com/send-email', {
+            const response = await fetch('https://server.appnotrics.com/send-email', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
