@@ -1,0 +1,599 @@
+.aboutUsChild,
+.aboutUsItem {
+  position: absolute;
+  top: -4px;
+  left: 233px;
+  border-radius: 50%;
+  background-color: #610e7c;
+  filter: blur(794px);
+  width: 524px;
+  height: 527px;
+}
+
+.aboutUsItem {
+  top: -51px;
+  left: 877px;
+  background-color: #3e51a2;
+  width: 536px;
+  height: 539px;
+}
+
+.bitech1Icon {
+  position: absolute;
+  top: 28px;
+  left: 96px;
+  width: 125px;
+  height: 51px;
+  object-fit: cover;
+}
+
+.aboutUsInner {
+  position: absolute;
+  top: 32px;
+  left: 1248px;
+  border-radius: var(--br-3xs);
+  background-color: #4477ce;
+  width: 142px;
+  height: 43px;
+}
+
+.contactUs {
+  position: absolute;
+  top: 44px;
+  left: 1270px;
+  font-size: var(--font-size-mid);
+}
+
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 242px;
+  border-radius: var(--br-3xs);
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 98px;
+  height: 38px;
+}
+
+.aboutUs1,
+.home,
+.ourServices,
+.ourTeam,
+.technologies {
+  position: absolute;
+  top: 0;
+  left: 94px;
+  font-weight: 500;
+}
+
+.aboutUs1,
+.home,
+.ourTeam,
+.technologies {
+  left: 0;
+}
+
+.aboutUs1,
+.ourTeam,
+.technologies {
+  left: 249px;
+}
+
+.ourTeam,
+.technologies {
+  left: 370px;
+}
+
+.technologies {
+  left: 498px;
+}
+
+.ourServicesParent,
+.rectangleParent {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 614px;
+  height: 19px;
+}
+
+.rectangleParent {
+  top: 30px;
+  left: 525px;
+  height: 38px;
+  font-size: var(--font-size-mid);
+  color: var(--color-steelblue);
+}
+
+.forBusinessAnd,
+.webDevelopProduct {
+  text-align: center;
+  font-size: 50px;
+  display: block;
+}
+.webDevelopProduct{
+  margin-top: 50px;
+}
+@media (max-width:991px) {
+
+  .webDevelopProduct,
+  .forBusinessAnd {
+    text-align: center;
+    font-size: 30px !important;
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+.forBusinessAnd {
+
+  margin-top: -11px;
+  background: linear-gradient(141.54deg,
+      #ed4af0 3.47%,
+      #1f85cf 61.45%,
+      #46dbe4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.goingAboveAnd {
+  margin: 0;
+  width: 90%;
+}
+
+.goingAboveAndContainer,
+.innovationIsOurContainer {
+  position: absolute;
+
+  background: linear-gradient(141.54deg,
+      #ed4af0 3.47%,
+      #1f85cf 61.45%,
+      #46dbe4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.goingAboveAndContainer {
+  top: 1019px;
+  font-size: 40px;
+}
+
+@media (max-width: 991px) {
+
+  .goingAboveAndContainer {
+    top: 600px;
+    font-size: 30px;
+  }
+
+  .innovationIsOurContainer {
+    top: 870px !important;
+    font-size: var(--font-size-11xl);
+    line-height: 129.5%;
+    display: inline-block;
+    font-family: var(--font-comfortaa);
+  }
+  .qualityMattersThat{
+    left: 20px !important;
+ font-family: var(--font-comfortaa);
+    width: 90% !important;
+  }
+}
+
+.innovationIsOurContainer {
+  top: 1216px;
+  font-size: var(--font-size-11xl);
+  line-height: 129.5%;
+  display: inline-block;
+  /* width: 562px; */
+}
+
+.aboutUsChild1,
+.aboutUsChild2,
+.aboutUsChild3,
+.rectangleIcon {
+  position: absolute;
+  top: 420px;
+  border-radius: var(--br-26xl);
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.aboutUsChild1,
+.aboutUsChild2,
+.aboutUsChild3 {
+  top: 493px;
+}
+
+.aboutUsChild2,
+.aboutUsChild3 {
+  top: 421px;
+}
+
+.aboutUsChild3 {
+  top: 493px;
+}
+
+.loremIpsumIs {
+  line-height: 141%;
+  font-weight: 200;
+  font-family: var(--font-comfortaa);
+  text-align: center;
+  height: 70px;
+  margin: 10px;
+margin-top: 20px;
+}
+
+.appnotricsTechnologiesIs,
+.exploreTheAppnotricsContainer,
+.qualityMattersThat,
+.whileProvidingA,
+.withTwoDecades {
+  position: absolute;
+  top: 1121px;
+  line-height: 141%;
+  font-family: var(--font-comfortaa);
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+}
+.withTwoDecades{
+  width: 80%;
+ 
+}
+@media (max-width: 991px) {
+  .withTwoDecades {
+    position: absolute;
+    top: 720px;
+    line-height: 141%;
+    font-family: var(--font-comfortaa);
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+  }
+}
+
+.appnotricsTechnologiesIs,
+.exploreTheAppnotricsContainer,
+.qualityMattersThat,
+.whileProvidingA {
+  top: 2250px;
+}
+.qualityMattersThat{
+  width: 80%;
+  left: 40px;
+}
+.appnotricsTechnologiesIs,
+.exploreTheAppnotricsContainer,
+.whileProvidingA {
+  top: 1216px;
+  left: calc(50% + 10px);
+  font-family: var(--font-comfortaa);
+  width: 593px;
+}
+
+@media (max-width:991px) {
+  .ourVision {
+    position: absolute;
+    top: 1420px !important;
+    left: 30px !important;
+    font-size: var(--font-size-11xl);
+    line-height: 129.5%;
+    display: inline-block;
+    background: linear-gradient(141.54deg,
+        #ed4af0 3.47%,
+        #1f85cf 61.45%,
+        #46dbe4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .whileProvidingA {
+    top: 1055px;
+    font-family: var(--font-comfortaa);
+    left: 0;
+    width: 95%;
+    margin: 10px;
+  }
+
+  .exploreTheAppnotricsContainer {
+    top: 1278px !important;
+    left: 10px !important;
+    height: 70px;
+    width: 100% !important;
+  }
+
+  .aTechnologicallyConnected {
+    position: absolute;
+    top: 1527px !important;
+    left: 30px !important;
+    line-height: 141%;
+    font-family: var(--font-poppins);
+    color: #222;
+    display: inline-block;
+    width: 90% !important;
+    height: 58px;
+
+  }
+
+  .rectangleDiv {
+    position: absolute;
+    top: 1363px !important;
+    left: 0;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 325px;
+  }
+
+  .appnotricsTechnologiesIs {
+
+    top: 1790px !important;
+    left: 20px !important;
+    height: 108px;
+    width: 90% !important;
+  }
+
+  .aboutUsChild4 {
+    position: absolute;
+    top: 1990px !important;
+    left: 100px !important;
+    width: 207px !important;
+    height: 200px !important;
+    object-fit: cover;
+  }
+
+  .ourMission {
+    top: 1700px !important;
+    left: 20px !important;
+  }
+
+  .leadership {
+    left: 20px !important;
+    top: 2250px !important;
+  }
+  .whatMatterTo{
+    left: 20px !important;
+  }
+}
+
+.appnotricsTechnologiesIs,
+.exploreTheAppnotricsContainer {
+  top: 1839px;
+  left: calc(50% - 390px);
+  height: 108px;
+}
+
+.exploreTheAppnotricsContainer {
+  top: 1330px;
+  left: calc(50% + 10px);
+  height: 70px;
+  font-size: 15px;
+}
+
+.rectangleDiv {
+  position: absolute;
+  top: 1463px;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1600px;
+  height: 325px;
+}
+
+.leadership,
+.ourMission,
+.ourVision,
+.whatMatterTo {
+  position: absolute;
+  top: 1587px;
+  left: calc(50% - 593px);
+  font-size: var(--font-size-11xl);
+  line-height: 129.5%;
+  display: inline-block;
+  background: linear-gradient(141.54deg,
+      #ed4af0 3.47%,
+      #1f85cf 61.45%,
+      #46dbe4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 123px;
+}
+
+.leadership,
+.ourMission,
+.whatMatterTo {
+  top: 1840px;
+  width: 145px;
+}
+
+.leadership,
+.whatMatterTo {
+  top: 2200px;
+  width: 383px;
+}
+
+.leadership {
+  top: 2309px;
+  width: 203px;
+}
+
+.aTechnologicallyConnected {
+  position: absolute;
+  top: 1597px;
+  left: calc(50% - 390px);
+  line-height: 141%;
+  font-family: var(--font-poppins);
+  color: #222;
+  display: inline-block;
+  width: 639px;
+  height: 58px;
+}
+
+.aboutUsChild4 {
+  position: absolute;
+  top: 1696px;
+  left: 850px;
+  width: 500px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.aboutUsChild5,
+.aboutUsChild6,
+.aboutUsChild7 {
+  position: absolute;
+  top: 2375px;
+  margin: auto;
+  background-color: var(--color-gainsboro);
+  /* width: 297px;
+  height: 297px; */
+}
+
+@media (max-width: 991px) {
+
+  .aboutUsChild5,
+  .aboutUsChild6,
+  .aboutUsChild7 {
+    left: 100px !important;
+  }
+  .aboutUsChild7 {
+    left: 50px !important;
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
+
+
+.appnotrics {
+  position: absolute;
+  top: 2956px;
+  left: 209px;
+  font-size: var(--font-size-31xl);
+}
+
+.loremIpsumIs1 {
+  position: absolute;
+  top: 3017px;
+  left: calc(50% - 592px);
+  font-weight: 300;
+  display: inline-block;
+  width: 452px;
+}
+
+.groupItem {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  border-radius: var(--br-mini);
+  background-color: #333335;
+  width: 509.73px;
+  height: 70px;
+}
+
+.enterYourEmail {
+  position: absolute;
+  top: -48px;
+  left: 21px;
+  font-weight: 300;
+  display: inline-block;
+  width: 185.59px;
+  height: 27px;
+}
+
+.groupInner {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  border-radius: 0 var(--br-mini) var(--br-mini) 0;
+  background-color: #1acdd9;
+  width: 88.98px;
+  height: 70px;
+}
+
+.vectorIcon {
+  position: absolute;
+  height: 26.03%;
+  width: 22.08%;
+  top: -52.82%;
+  right: 25.26%;
+  bottom: 126.79%;
+  left: 52.66%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.rectangleContainer,
+.rectangleGroup {
+  position: absolute;
+  top: 0;
+  left: 422.02px;
+  width: 70px;
+  height: 88.98px;
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
+}
+
+.rectangleGroup {
+  top: 3180px;
+  left: 208px;
+  height: 511px;
+  color: #afafaf;
+  font-family: var(--font-comfortaa);
+}
+
+.aboutOurTeamContainer,
+.aboutOurTeamContainer1 {
+  position: absolute;
+  top: 2956px;
+  left: 804px;
+}
+
+.aboutOurTeamContainer1 {
+  left: 999px;
+}
+
+.aboutUsChild8,
+.contactUsOurContainer {
+  position: absolute;
+  top: 2956px;
+  left: 1194px;
+}
+
+.aboutUsChild8 {
+  top: 3255px;
+  left: -6px;
+  background-color: #292929;
+  width: 1611px;
+  height: 60px;
+}
+
+.allRightReserved,
+.b {
+  position: absolute;
+  top: 0;
+  left: 19.79px;
+}
+
+.b {
+  left: 0;
+}
+
+.allRightReservedParent {
+  position: absolute;
+  top: 3276px;
+  left: 711px;
+  width: 175.79px;
+  height: 19px;
+  font-size: 17.36px;
+}
+
+.aboutUs {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  height: 2400px;
+  overflow: hidden;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-comfortaa);
+}
