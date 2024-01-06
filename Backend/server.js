@@ -20,7 +20,7 @@ app.post('/send-email', (req, res) => {
       port: 587,
       secure: false,
       auth: {
-        user: 'support@appnotrics.com',;
+        user: 'support@appnotrics.com',
         pass: 'Appn0trics!',
       },
     });

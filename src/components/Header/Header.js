@@ -38,7 +38,7 @@ const Header = () => {
                     <div className="row">
                         <div className="col-lg-2 ">
                             <div className="my-5">
-                                <img className={styles.bitech1Icon} alt="" src="/bitech-1@2x.png" />
+                                <img className={styles.bitech1Icon} alt="" src="/logo.png" />
                             </div>
                         </div>
                         <div className="col-lg-10  my-4">
@@ -101,7 +101,7 @@ const Header = () => {
                 <div>
                     {/* <div className={style.frameChild7} /> */}
                     <Link to="/">
-                        <img className={styles.bitech1Icon} alt="" src="/bitech-1@2x.png" />
+                        <img className={styles.bitech1Icon} alt="" src="/logo.png" />
                     </Link>
                     <div id="mySidenav" className="sidenav">
                         <a href="javascript:void(0)" className="closebtn" onClick={closeNav}><FaTimes /></a>

@@ -12,7 +12,7 @@ const Arr = [
             title: 'Web Development',
             description: 'Web development is the use of coding to create websites and apps. It brings ideas online and combines design and usefulness.',
         },
-        images: ['./Rectangle 54.png', './Rectangle 62.png'],
+        images: ['./rectangle54.png', './rectangle62.png'],
         skills: ["HTML", "CSS", "JavaScript", "React", "Node Js", "Bootstrap"]
     },
     {
@@ -21,7 +21,7 @@ const Arr = [
             title: 'App Development',
             description: ' Appnotrics transforms your ideas into mobile magic, from sleek interfaces to captivating user journeys. Lets build something extraordinary together.',
         },
-        images: ['./Rectangle 55.png', './rectangle 63.png'],
+        images: ['./rectangle55.png', './rectangle63.png'],
         skills: ["iOS", "Android", "React Native", "Flutter", "Java", "Python"]
     },
     {
@@ -30,7 +30,7 @@ const Arr = [
             title: 'Cloud Hosting',
             description: 'Leave the Hardware Blues Behind: Ditch the maintenance stress. Appnotrics managed cloud hosting keeps your systems up and running, 24/7.',
         },
-        images: ['./rectangle 56.png', './rectangle 64.png'],
+        images: ['./rectangle56.png', './rectangle64.png'],
         skills: ["AWS", "Azure", "Google Cloud", "IBM Cloud", "Oracle Cloud", "DigitalOcean"]
     },
     {
@@ -39,7 +39,7 @@ const Arr = [
             title: 'UI/UX Designing',
             description: 'Transform clicks into connections. Appnotrics crafts interfaces that are as beautiful as they are intuitive, weaving experiences that users sing about.',
         },
-        images: ['./rectangle 57.png', './rectangle 65.png'],
+        images: ['./rectangle57.png', './rectangle65.png'],
         skills: ["UI Design", "UX Design", "Adobe XD"]
     },
 ];

@@ -45,7 +45,7 @@ const handleSubmit = async (e) => {
     //     return;
     // }
     try {
-      const response = await fetch("https://api.innovasolutions.pk/send-email", {
+      const response = await fetch('http://server.appnotrics.com/send-email', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -93,7 +93,7 @@ const handleInputChange = (e) => {
   return (
     <div>
 
-      <div className="khaplu_modal" id="khaplu_modal" bis_skin_checked="1" style={{ display: "block" }}></div><div className="main_khaplu_popup" id="main_khaplu_popup" bis_skin_checked="1" style={{ top: "50%", opacity: "1" }}><div className="khaplu_popup" bis_skin_checked="1"><a href="/"><button className="khaplu_secondary_btn" id="khaplu_close_btn " fdprocessedid="d670xg"><img src="cancel.png" alt="" /></button></a><div className="khaplu_header" bis_skin_checked="1"><h2 className="khaplu_title">Get in touch</h2><p className="khaplu_para">To schedule a consultation, <span>please send us your details.</span></p>
+      <div className="khaplu_modal" id="khaplu_modal" bis_skin_checked="1" style={{ display: "block" }}></div><div className="main_khaplu_popup" id="main_khaplu_popup" bis_skin_checked="1" style={{ top: "50%", opacity: "1" }}><div className="khaplu_popup" bis_skin_checked="1"><a href="/"><button className="khaplu_secondary_btn" id="khaplu_close_btn " fdprocessedid="d670xg"><img src="cancel.png" alt="" /></button></a><div className="khaplu_header" bis_skin_checked="1">
       </div>
         <div className="khaplu_body" bis_skin_checked="1">
           <form id="contact-form" onSubmit={handleSubmit}>

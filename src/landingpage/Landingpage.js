@@ -20,7 +20,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import "animate.css"
 import { Base_Url } from "../"
-
+import Popupcard from "../components/Popupcard";
 
 // CustomPrevArrow Component
 const CustomPrevArrow = (props) => {
@@ -53,10 +53,12 @@ const CustomNextArrow = (props) => {
 
 const Landingpage = () => {
     const [filter, setFilter] = useState('web-design');
+    const [showPopup, setShowPopup] = useState(false);
 
     const handleContactClick = () => {
         setShowPopup(true);
     };
+
     const portfolioData = [
         {
             category: 'social-media',
@@ -290,8 +292,8 @@ const Landingpage = () => {
         initialSlide: 0,
         arrows: false,
         autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
+        speed: 2000,
+        autoplaySpeed: 2000,
         prevArrow: <CustomPrevArrow />,
         nextArrow: <CustomNextArrow />,
         responsive: [
@@ -318,8 +320,8 @@ const Landingpage = () => {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
+                    speed: 2000,
+                    autoplaySpeed: 2000,
                 }
             }
         ]
@@ -336,7 +338,8 @@ const Landingpage = () => {
                             <p style={{ fontFamily: "poppins" }}>From concept to execution, we are dedicated to
                                 visualizing  your ideas and transforming them
                                 into reality.</p>
-                            <button className='btn'>Join Us</button> <br /><br /><br />
+                            <button className='btn' onClick={handleContactClick}>Join Us</button> <br /><br /><br />
+                            {showPopup && <Popupcard />}
                         </div>
 
                         <div className='col-lg-7 '>
@@ -360,12 +363,12 @@ const Landingpage = () => {
                             <p className="text-light" style={{ fontFamily: "poppins" }}>Innovation Consulting</p>
                         </div>
                         <div className='col-lg-6 d-flex justify-content-center align-items-center'>
-                            <div class='aboutbox' style={{width: "60%", alignItems: "center"}}>
+                            <div class='aboutbox' style={{ width: "60%", alignItems: "center" }}>
                                 <div > <br /> <br /><br />
-                                    <img src='/ceo.jpg' alt='Person 1' style={{ width: '100%', borderRadius: "10px",  height: '100%', alignItems: "center" }} />
+                                    <img src='/ceo.jpg' alt='Person 1' style={{ width: '100%', borderRadius: "10px", height: '100%', alignItems: "center" }} />
                                 </div>
-                                <h4 className='abth4 text-light text-center my-2' style={{fontFamily: "poppins"}}>Muhammad  Bilal</h4>
-                                        <p className='text-light text-center' style={{fontFamily: "poppins"}}>Founder / Ceo</p>
+                                <h4 className='abth4 text-light text-center my-2' style={{ fontFamily: "poppins" }}>Muhammad  Bilal</h4>
+                                <p className='text-light text-center' style={{ fontFamily: "poppins" }}>Founder / Ceo</p>
                                 {/* <h4 className='text-dark text-center my-2'>Muhammad <br /> Bilal</h4>
                                 <p className='text-dark text-center'>Founder & Ceo</p> */}
                             </div><br />
@@ -602,59 +605,59 @@ const Landingpage = () => {
                 </div >
                 <br /> <br />
                 <Desktop>
-                <div>
-                    <h2 className='ourservice d-flex text-center justify-content-center' > Our <p>&nbsp;</p> <h3 className='ourservice2'>Client Speaks </h3> <br /> </h2>
-                    <p className='text-center text-light' style={{ fontFamily: "poppins" }}>We don't just build software, we build relationships</p>
-                    <div className='container'>
-                        <div className='row '>
+                    <div>
+                        <h2 className='ourservice d-flex text-center justify-content-center' > Our <p>&nbsp;</p> <h3 className='ourservice2'>Client Speaks </h3> <br /> </h2>
+                        <p className='text-center text-light' style={{ fontFamily: "poppins" }}>We don't just build software, we build relationships</p>
+                        <div className='container'>
+                            <div className='row '>
 
-                            <div className='col-lg-3 mx-auto textmonial mx-2'> <br /><br />
-                                <img src='/ellipse-93@2x.png' className='mx-auto d-flex justify-content-center align-items-center' /> <br />
-                                <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>"Appnotrics turned my app dream into reality! Their design is stunning, the user experience is seamless, and my conversion rates are soaring. 5/5 stars!" - Sarah M., Entrepreneur</p>
+                                <div className='col-lg-3 mx-auto textmonial mx-2'> <br /><br />
+                                    <img src='/ellipse-93@2x.png' className='mx-auto d-flex justify-content-center align-items-center' /> <br />
+                                    <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>"Appnotrics turned my app dream into reality! Their design is stunning, the user experience is seamless, and my conversion rates are soaring. 5/5 stars!" - Sarah M., Entrepreneur</p>
+                                    <br />
+                                </div>
+                                <div className='col-lg-3 mx-auto textmonial mx-2'> <br /><br />
+                                    <img src='/Ellipse 94.svg' className='mx-auto d-flex justify-content-center ' /> <br />
+                                    <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>From the initial consultation to the final launch, Appnotrics was professional, patient, and incredibly creative. Our app is a masterpiece, and we owe it all to them." - David C., App Developer</p>
+                                </div>
                                 <br />
-                            </div>
-                            <div className='col-lg-3 mx-auto textmonial mx-2'> <br /><br />
-                                <img src='/Ellipse 94.svg' className='mx-auto d-flex justify-content-center ' /> <br />
-                                <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>From the initial consultation to the final launch, Appnotrics was professional, patient, and incredibly creative. Our app is a masterpiece, and we owe it all to them." - David C., App Developer</p>
-                            </div>
-                            <br />
-                            <div className='col-lg-3 mx-auto textmonial  mx-2'> <br /><br />
-                                <img src='/Ellipse 95.svg' className='mx-auto d-flex justify-content-center w-0' /> <br />
-                                <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>Appnotrics doesn't just build software, they build relationships. Working with them was a joy, and the results speak for themselves." - Thomas B., Business Owner</p>
-                                <br />
+                                <div className='col-lg-3 mx-auto textmonial  mx-2'> <br /><br />
+                                    <img src='/Ellipse 95.svg' className='mx-auto d-flex justify-content-center w-0' /> <br />
+                                    <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>Appnotrics doesn't just build software, they build relationships. Working with them was a joy, and the results speak for themselves." - Thomas B., Business Owner</p>
+                                    <br />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div> <br /> <br /> <br />
+                    </div> <br /> <br /> <br />
                 </Desktop>
                 <Mobile>
 
-                <div>
-                    <h2 className='ourservice d-flex text-center justify-content-center' > Our <p>&nbsp;</p> <h3 className='ourservice2'>Client Speaks </h3> <br /> </h2>
-                    <p className='text-center text-light' style={{ fontFamily: "poppins" }}>We don't just build software, we build relationships</p>
-                    <div className='container'>
-                        <div className='row '>
+                    <div>
+                        <h2 className='ourservice d-flex text-center justify-content-center' > Our <p>&nbsp;</p> <h3 className='ourservice2'>Client Speaks </h3> <br /> </h2>
+                        <p className='text-center text-light' style={{ fontFamily: "poppins" }}>We don't just build software, we build relationships</p>
+                        <div className='container'>
+                            <div className='row '>
 
-            <Slider {...settings} ref={sliderRef}>
-                            <div className='col-lg-3 mx-auto textmonial mx-2'> <br />
-                                <img src='/ellipse-93@2x.png' className='mx-auto d-flex justify-content-center align-items-center' /> <br />
-                                <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>"Appnotrics turned my app dream into reality! Their design is stunning, the user experience is seamless, and my conversion rates are soaring. 5/5 stars!" - Sarah M., Entrepreneur</p>
-                                <br />
+                                <Slider {...settings} ref={sliderRef}>
+                                    <div className='col-lg-3 mx-auto textmonial mx-2'> <br />
+                                        <img src='/ellipse-93@2x.png' className='mx-auto d-flex justify-content-center align-items-center' /> <br />
+                                        <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>"Appnotrics turned my app dream into reality! Their design is stunning, the user experience is seamless, and my conversion rates are soaring. 5/5 stars!" - Sarah M., Entrepreneur</p>
+                                        <br />
+                                    </div>
+                                    <div className='col-lg-3 mx-auto textmonial mx-2'> <br />
+                                        <img src='/Ellipse 94.svg' className='mx-auto d-flex justify-content-center ' /> <br />
+                                        <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>From the initial consultation to the final launch, Appnotrics was professional, patient, and incredibly creative. Our app is a masterpiece, and we owe it all to them." - David C., App Developer</p>
+                                        <br />
+                                    </div>
+                                    <div className='col-lg-3 mx-auto textmonial  mx-2'> <br />
+                                        <img src='/Ellipse 95.svg' className='mx-auto d-flex justify-content-center w-0' /> <br />
+                                        <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>Appnotrics doesn't just build software, they build relationships. Working with them was a joy, and the results speak for themselves." - Thomas B., Business Owner</p>
+                                        <br />
+                                    </div>
+                                </Slider>
                             </div>
-                            <div className='col-lg-3 mx-auto textmonial mx-2'> <br />
-                                <img src='/Ellipse 94.svg' className='mx-auto d-flex justify-content-center ' /> <br />
-                                <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>From the initial consultation to the final launch, Appnotrics was professional, patient, and incredibly creative. Our app is a masterpiece, and we owe it all to them." - David C., App Developer</p>
-                            <br />
-                            </div>
-                            <div className='col-lg-3 mx-auto textmonial  mx-2'> <br />
-                                <img src='/Ellipse 95.svg' className='mx-auto d-flex justify-content-center w-0' /> <br />
-                                <p className='text-center text-light w-75 mx-auto' style={{ fontFamily: "poppins", fontSize: "15px" }}>Appnotrics doesn't just build software, they build relationships. Working with them was a joy, and the results speak for themselves." - Thomas B., Business Owner</p>
-                                <br />
-                            </div>
-                            </Slider>
                         </div>
-                    </div>
-                </div> <br /><br />
+                    </div> <br /><br />
                 </Mobile>
                 <div className='container'>
                     <h2 className='ourservice d-flex text-center justify-content-center'> Lets Talk    <br /></h2>
@@ -664,7 +667,7 @@ const Landingpage = () => {
                             <p className='mt-3 w-100 text-light' style={{ fontWeight: 100 }}>It is a long established fact that a by the readable content is that it has a more-or-less normal distribution</p>
                             <p>
                                 <img className="animation text-light" src="/phone.gif" style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(100) hue-rotate(180deg)' }} alt="Phone Icon" /> &nbsp;
-                                02134120126
+                                +44 7340 238749
                             </p>
                             <p>
                                 <img className="animation text-light" src="/message.gif" style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(100) hue-rotate(180deg)' }} alt="Message Icon" /> &nbsp;
@@ -686,14 +689,14 @@ const Landingpage = () => {
                                         id="standard-basic"
                                         label="First Name"
                                         variant="standard"
-                                        className='box'
+                                        className='box '
                                         name="name"
                                         style={{ color: "#fff", borderBottom: "2px solid #fff" }}
                                         value={formData.name}
                                         onChange={handleInputChange}
                                     />
                                     {formErrors.name && (
-                                        <p className="error-message">Please enter your name</p>
+                                        <p className="error-message text-danger ">Please enter your name</p>
                                     )}
                                 </div>
                                 <div className='col-lg-12'>
@@ -703,7 +706,7 @@ const Landingpage = () => {
                                         type="email"
                                         name="email"
                                         variant="standard"
-                                        className='box'
+                                        className='box '
 
                                         style={{ color: "#fff", borderBottom: "2px solid #fff" }}
                                         value={formData.email}
@@ -711,7 +714,13 @@ const Landingpage = () => {
                                         required
                                     />
                                     {formErrors.email && (
-                                        <p className="error-message">Please enter your name</p>
+                                        <p className="error-message text-danger
+                                        text-danger
+                                        text-danger
+                                        text-danger text-danger
+text-danger
+text-danger
+text-danger">Please enter your Email</p>
                                     )}
                                 </div>
                                 <div className='col-lg-12'>
@@ -722,13 +731,16 @@ const Landingpage = () => {
                                         required
                                         variant="standard"
                                         name="phone"
-                                        className='box'
+                                        className='box '
                                         style={{ color: "#fff", borderBottom: "2px solid #fff" }}
                                         value={formData.phone}
                                         onChange={handleInputChange}
                                     />
                                     {formErrors.phone && (
-                                        <p className="error-message">Please enter your name</p>
+                                        <p className="error-message text-danger
+text-danger
+text-danger
+text-danger">Please enter your Phone</p>
                                     )}
                                 </div>
                                 <div className='col-lg-12'>
@@ -736,14 +748,17 @@ const Landingpage = () => {
                                         id="standard-basic"
                                         label="Tell us About Your Project"
                                         variant="standard"
-                                        className='box'
+                                        className='box '
                                         name="message"
                                         style={{ color: "#fff", borderBottom: "2px solid #fff" }}
                                         value={formData.message}
                                         onChange={handleInputChange}
                                     />
                                     {formErrors.message && (
-                                        <p className="error-message">Please enter your name</p>
+                                        <p className="error-message text-danger
+text-danger
+text-danger
+text-danger">Please enter your message</p>
                                     )}
                                 </div>
 
@@ -751,7 +766,10 @@ const Landingpage = () => {
                             <div >
                                 <br /><br />
                                 <button className="btn" onClick={handleSubmit} >Send Message</button>
-                            </div>
+                            </div> <br /><br />
+                            {submissionMessage && (
+                                <p className="submission-message  text-light">{submissionMessage}</p>
+                            )}
                         </div>
                     </div>
                 </div>
